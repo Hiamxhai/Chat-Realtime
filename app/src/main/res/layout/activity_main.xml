@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F8F0F0"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <ListView
+
+       android:id="@+id/listviewUser"
+       android:layout_weight="2"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"></ListView>
+
+    <TextView
+        android:padding="10dp"
+        android:textColor="#18A7E8"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:text="Nội Dung Chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></TextView>
+
+    <ListView
+
+        android:id="@+id/listviewChat"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></ListView>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <EditText
+                android:hint="Input here"
+                android:id="@+id/editTextContent"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></EditText>
+
+            <ImageButton
+                android:id="@+id/imageButtonAdd"
+                android:background="@null"
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/add2"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/imageButtonSend"
+                android:background="@null"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/send"></ImageButton>
+        </LinearLayout>
+</LinearLayout>
